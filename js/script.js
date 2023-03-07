@@ -2,7 +2,7 @@ const nomeUtente = prompt('Inserisci il tuo nome');
 const cognomeUtente = prompt('Inserisci il tuo cognome')
 const coloreUtente = prompt('Inserisci il tuo colore preferito')
 const utente = nomeUtente + cognomeUtente + coloreUtente + '21';
-if(nomeUtente && cognomeUtente && coloreUtente){
+if(nomeUtente && cognomeUtente && coloreUtente && isNaN(nomeUtente) && isNaN(cognomeUtente) && isNaN(coloreUtente)){
     document.getElementById('utente').innerHTML = utente;
 }
 else
